@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portafolio/build/static/css/main.91cd30f3.css",
+    "main.js": "/portafolio/build/static/js/main.79ab3712.js",
+    "static/media/logo-js.png": "/portafolio/build/static/media/logo-js.cae65a84867e9d6ad7bf.png",
+    "static/media/hero-bg.jpg": "/portafolio/build/static/media/hero-bg.d4e4dfc41568f51250f8.jpg",
+    "static/media/portfolio-3.jpg": "/portafolio/build/static/media/portfolio-3.054fb7767c5fe3de6a74.jpg",
+    "static/media/foto-de-perfil-para-portafolio.png": "/portafolio/build/static/media/foto-de-perfil-para-portafolio.75d98833dd6325d8c9bc.png",
+    "static/media/portfolio-2.jpg": "/portafolio/build/static/media/portfolio-2.19e6f6d87a7889bdc300.jpg",
+    "static/media/logo-python.png": "/portafolio/build/static/media/logo-python.d8b377f05522bf35de36.png",
+    "static/media/portfolio-1.jpg": "/portafolio/build/static/media/portfolio-1.02a9501506b32393a02e.jpg",
+    "static/media/logo-csharp.png": "/portafolio/build/static/media/logo-csharp.1d9bbc155e259e76d7ce.png",
+    "static/media/profile-img.jpg": "/portafolio/build/static/media/profile-img.23977f23f4ed53b4fdad.jpg",
+    "static/media/logo-postgres.png": "/portafolio/build/static/media/logo-postgres.f55f39a38d7e2d64f84c.png",
+    "static/media/logo-react.png": "/portafolio/build/static/media/logo-react.1e5639fdfd7c944093d3.png",
+    "static/media/logo-shopify.png": "/portafolio/build/static/media/logo-shopify.e1b6c7ba1bf220abf4b0.png",
+    "static/media/logo-boostrap.png": "/portafolio/build/static/media/logo-boostrap.a5b93e3a78f2e33bea41.png",
+    "static/media/logo-sql.png": "/portafolio/build/static/media/logo-sql.ee2b2d8279fb9225c0c3.png",
+    "static/media/logo-php.png": "/portafolio/build/static/media/logo-php.842ef02b41f2b4a40201.png",
+    "static/media/logo-firebase.png": "/portafolio/build/static/media/logo-firebase.4f2ad6e09ee2a150f911.png",
+    "static/media/logo-laravel.png": "/portafolio/build/static/media/logo-laravel.9deb7b8accaeb576c057.png",
+    "static/media/logo-css.png": "/portafolio/build/static/media/logo-css.463e319bad8e0edf1ef7.png",
+    "static/media/html-logo-1.png": "/portafolio/build/static/media/html-logo-1.ff3cf75e3b7cbb4ea77c.png",
+    "static/media/logo-phpmyadmin.png": "/portafolio/build/static/media/logo-phpmyadmin.6715a5a0b8eabb58959b.png",
+    "index.html": "/portafolio/build/index.html",
+    "main.91cd30f3.css.map": "/portafolio/build/static/css/main.91cd30f3.css.map",
+    "main.79ab3712.js.map": "/portafolio/build/static/js/main.79ab3712.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91cd30f3.css",
+    "static/js/main.79ab3712.js"
+  ]
+}
