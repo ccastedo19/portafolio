@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from '../../img/portfolio-1.jpg';
 import img2 from '../../img/portfolio-2.jpg';
 import img3 from '../../img/portfolio-3.jpg';
+import img4 from '../../img/portfolio-4.jpg';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
@@ -24,7 +25,7 @@ export const Portfolio = () => {
             <div className="portfolio-wrap">
               <img src={img1} className="img-fluid" alt="portfolio1"/>
               <div className="portfolio-links">
-                <p style={{fontSize:'18px', color:'white',textAlign:'center', width:'85%', position:'relative',top:'20px'}}>Desarollo de un sistema ERP (PHP, SQL, Api Rest)</p>
+                <p style={{fontSize:'18px', color:'white',textAlign:'center', width:'85%', position:'relative',top:'20px'}}></p>
                 <Button style={{fontWeight:'600', position:'relative',top:'35px'}} variant='danger'>Ver Proyecto <FontAwesomeIcon style={{width:'15px'}} icon={faUpRightFromSquare}/> </Button>
               </div>
             </div>
@@ -37,8 +38,7 @@ export const Portfolio = () => {
             <div className="portfolio-wrap">
               <img src={img2} className="img-fluid" alt="portfolio1"/>
               <div className="portfolio-links">
-                <p style={{fontSize:'18px', color:'white',textAlign:'center', width:'85%', position:'relative',top:'20px'}}> Creación
-                 de plantilla elaborada desde un mockup (HTML, CSS, JavaScript)</p>
+                <p style={{fontSize:'18px', color:'white',textAlign:'center', width:'85%', position:'relative',top:'20px'}}></p>
                 <Button style={{fontWeight:'600', position:'relative',top:'35px'}} variant='danger'>Ver Proyecto <FontAwesomeIcon style={{width:'15px'}} icon={faUpRightFromSquare}/> </Button>
               </div>
             </div>
@@ -51,12 +51,25 @@ export const Portfolio = () => {
             <div className="portfolio-wrap">
               <img src={img3} className="img-fluid" alt="portfolio1"/>
               <div className="portfolio-links">
-                <p style={{fontSize:'18px', color:'white',textAlign:'center', width:'85%', position:'relative',top:'20px'}}>Desarollo de sistema ecommerce para Barracuda (Shopify)</p>
+                <p style={{fontSize:'18px', color:'white',textAlign:'center', width:'85%', position:'relative',top:'20px'}}></p>
                 <Button style={{fontWeight:'600', position:'relative',top:'35px'}} variant='danger'>Ver Proyecto <FontAwesomeIcon style={{width:'15px'}} icon={faUpRightFromSquare}/> </Button>
               </div>
             </div>
             <div className='portfolio-title'>
               <span>SISTEMA DE ECOMMERCE</span>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div className="portfolio-wrap">
+              <img src={img4} className="img-fluid" alt="portfolio1"/>
+              <div className="portfolio-links">
+                <p style={{fontSize:'18px', color:'white',textAlign:'center', width:'85%', position:'relative',top:'20px'}}></p>
+                <Button style={{fontWeight:'600', position:'relative',top:'35px'}} variant='danger'>Ver Proyecto <FontAwesomeIcon style={{width:'15px'}} icon={faUpRightFromSquare}/> </Button>
+              </div>
+            </div>
+            <div className='portfolio-title'>
+              <span>PÁGINA PORTAFOLIO</span>
             </div>
           </div>
 
