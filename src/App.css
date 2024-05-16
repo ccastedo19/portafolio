@@ -704,19 +704,6 @@ section {
   z-index: 1;
 }
 
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
 .portfolio .portfolio-wrap .portfolio-links {
   background-color: rgba(23, 59, 108, 0.9);
   height: 300px;
@@ -877,6 +864,42 @@ section {
   content: "\eb3e";
 }
 
+/*--------------modal portafolio----------*/
+
+#title-modal{
+  font-size: 21px;
+}
+.seccion-modal{
+  margin-bottom: 30px;
+}
+.modal-header{
+  background-color: #149ddd !important;
+  color: #fff !important;
+}
+.btn-close{
+  --bs-btn-close-bg: url("img/boton-x.png") !important;
+  --bs-btn-close-opacity: 10 !important
+}
+.modal-body{
+  background: #E6EAF1 !important;
+}
+
+#descripcion-modal{
+  font-size: 14px;
+}
+
+.logos-tec-modal{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.logo-rep-modal{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 /*-------------Contacto*---------------*/
 
 

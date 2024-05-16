@@ -22,6 +22,7 @@ import LogoMaterialize from '../../src/img/logo-materialize.png';
 import LogoNode from '../../src/img/logo-node.png';
 import LogoNpm from '../../src/img/logo-npm.png';
 import LogoUi from '../../src/img/logo-ui.png';
+import LogoBlazor from '../../src/img/logo-blazor.png';
 import Button from 'react-bootstrap/Button';
 
 export const Skill = () => {
@@ -161,6 +162,11 @@ export const Skill = () => {
               </div>
 
               <div className={`Logo-Skill ${filter === 'tools' ? '' : 'hidden'}`} id="tools">
+                <img style={{width:'100px'}} src={LogoBlazor} alt='LogoBlazor' />
+                <span>Blazor</span>
+              </div>
+
+              <div className={`Logo-Skill ${filter === 'tools' ? '' : 'hidden'}`} id="tools">
                 <img style={{width:'100px'}} src={LogoBoostrap2} alt='LogoBoostrap2' />
                 <span>Bootstrap</span>
               </div>
@@ -175,12 +181,12 @@ export const Skill = () => {
                 <span>Materialize</span>
               </div>
 
-              <div className="Logo-Skill espacio" id="tools">
+              {/*<div className="Logo-Skill espacio" id="tools">
                 <img style={{width:'100px'}} src={LogoMaterialize} alt='LogoMaterialize' />
                 <span>Materialize</span>
-              </div>
+              </div>*/}
 
-            </div>
+          </div>
           )}
           
 
