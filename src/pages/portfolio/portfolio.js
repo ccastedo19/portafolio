@@ -31,7 +31,9 @@ export const Portfolio = () => {
       description: "Sistema ERP para gestionamiento de empresas.",
       repositorio:[{variant:"dark", icon: faGithub, url: "https://github.com/ccastedo19/sistema_erp", name: "Github" }],
       technologies: [{img: LogoHtml}, {img: LogoCss }, {img: LogoJS }, {img: LogoBoostrap2}, {img: LogoPhp }, {img: LogoSql }],
-      videoPlaceholder: "Aquí irá el video más adelante"
+      videoUrl: "https://www.youtube.com/embed/gYhVdLIlLQU?si=QW3EGd5pDyezW9BG",
+      errorDisplay: "none"
+      
     },
     {
       img: img2,
@@ -39,7 +41,9 @@ export const Portfolio = () => {
       description: "Plantilla para uso de página web.",
       repositorio:[{variant:"dark", icon: faGithub, url: "https://github.com/ccastedo19/Prueba-BECA", name: "Github"}, {variant:"success", icon: faGlobe, url: "https://lan-page-beca.netlify.app/", name: "Demo"}],
       technologies: [{img: LogoHtml}, {img: LogoCss }, {img: LogoJS }],
-      videoPlaceholder: "Aquí irá el video más adelante"
+      videoUrl: "https://www.youtube.com/embed/W_obeWxmGdY?si=nZsba5sgGSTwzgSX",
+      errorDisplay: "none"
+     
     },
     {
       img: img3,
@@ -47,7 +51,9 @@ export const Portfolio = () => {
       description: "Sistema ecommerce para la empresa Barracuda.",
       repositorio:[{variant:"danger", icon: faLock, url: "#", name: "Sin vista" }],
       technologies: [{img: LogoShopify}, {img: LogoHtml}, {img: LogoCss }, {img: LogoJS }],
-      videoPlaceholder: "Aquí irá el video más adelante"
+      videoUrl: "https://www.youtube.com/embed/P3Z8ObUdXTE?si=IvUyQeThfEZhYMSk",
+      errorDisplay: "none"
+      
     },
     {
       img: img4,
@@ -55,7 +61,9 @@ export const Portfolio = () => {
       description: "Página web de mi portafolio.",
       repositorio:[{variant:"dark", icon: faGithub, url: "https://github.com/ccastedo19/portafolio", name: "Github" }],
       technologies: [{img: LogoReact}, {img: LogoHtml}, {img: LogoCss }, {img: LogoJS }],
-      videoPlaceholder: "Aquí irá el video más adelante"
+      videoUrl: "https://www.youtube.com/embed/9VYL3mFKJZo?si=Yy3mZA59BebRRsHG",
+      errorDisplay: "none"
+      
 
     },
     {
@@ -64,7 +72,10 @@ export const Portfolio = () => {
       description: "Sistema Bibliotecario con gestionamiento de estudiantes.",
       repositorio:[{variant:"dark", icon: faGithub, url: "https://github.com/ccastedo19/sistema_bibliotecario", name: "Github" }],
       technologies: [{img: LogoLaravel}, {img: LogoHtml}, {img: LogoCss }, {img: LogoJS }, {img: LogoBoostrap2}, {img: LogoSql }],
-      videoPlaceholder: "Aquí irá el video más adelante"
+      videoUrl: "",
+      textNoValid: "Video no disponible",
+      errorDisplay: "block"
+      
     }
   ];
 
@@ -104,31 +115,40 @@ export const Portfolio = () => {
           <Modal.Body>
             <div className="container-fluid">
               <div className="row">
-                <div className="col-md-8">
-                  <p>{projectDetails.videoPlaceholder}</p>
-                </div>
+              <div className="col-md-8">
+              <p style={{ display: projectDetails.errorDisplay }}>{projectDetails.textNoValid}</p>
+              <iframe 
+                title={`Video de ${projectDetails.title}`}
+                src={projectDetails.videoUrl}
+                width="100%"
+                height="350px"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+              </div>
                 <div className="col-md-4">
                   <div className='seccion-modal'>
                     <h4 id="title-modal">Repositorio</h4>
-                      <div className='logo-rep-modal'>
-                        {projectDetails.repositorio?.map((rep, index) => (
-                          <Button target='_blank' variant={rep.variant} href={rep.url}>
-                            <FontAwesomeIcon icon={rep.icon} size='lg' /><span style={{paddingLeft:"5px"}}>{rep.name}</span>
-                          </Button>
-                        ))}
-                      </div>
+                    <div className='logo-rep-modal'>
+                      {projectDetails.repositorio?.map((rep, index) => (
+                        <Button target='_blank' variant={rep.variant} href={rep.url}>
+                          <FontAwesomeIcon icon={rep.icon} size='lg' /><span style={{paddingLeft:"5px"}}>{rep.name}</span>
+                        </Button>
+                      ))}
+                    </div>
                   </div>
 
                   <div className='seccion-modal'>
                     <h4 id="title-modal">Tecnologías</h4>
                     <div className='logos-tec-modal'>
                       {projectDetails.technologies?.map((tech, index) => (
-
-                            <img style={{width:"40px"}} src={tech.img} alt="imgLogo" />
+                        <img style={{width:"40px"}} src={tech.img} alt="imgLogo" />
                       ))}
                     </div>
                   </div>
                   <div className='seccion-modal'>
+                    
                     <h4 id="title-modal">Descripción</h4>
                     <p id="descripcion-modal">{projectDetails.description}</p>
                   </div>
@@ -137,6 +157,7 @@ export const Portfolio = () => {
             </div>
           </Modal.Body>
         </Modal>
+
       </div>
     </section>
   );

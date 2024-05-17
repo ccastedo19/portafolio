@@ -5,9 +5,7 @@ import fotoPerfil from './img/foto-de-perfil-para-portafolio.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
-//import { useLocation } from 'react-router-dom';
 import { faFile, faHome, faMessage, faUser, faBars, faX, faMedal } from '@fortawesome/free-solid-svg-icons';
-/*import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';*/
 import Inicio from './pages/inicio/inicio';
 import Portfolio from './pages/portfolio/portfolio';
 import SobreMi from './pages/sobre_mi/sobre_mi';
@@ -15,12 +13,10 @@ import Contacto from './pages/contacto/contacto';
 
 
 function MainNavigation() {
-  //const location = useLocation();
-  //const currentPath = location.pathname;
   const [color, setColor] = useState('#a8a9b4'); 
 
   const cambiarColor = () => {
-    setColor('#a8a9b4'); // para no cambiar de color por el boostrap al hacer click
+    setColor('#a8a9b4'); 
   };
 
   return (
