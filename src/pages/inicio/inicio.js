@@ -17,7 +17,7 @@ const Inicio = () => {
         <span style={{color:'red',fontSize:'35px'}}>
           <Cursor cursorStyle="|" />
         </span>
-        </p>
+        </p> 
       </div>
     </section>
     

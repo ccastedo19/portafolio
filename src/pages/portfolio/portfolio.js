@@ -82,10 +82,18 @@ export const Portfolio = () => {
   const handleShowModal = (project) => {
     setProjectDetails(project);
     setShowModal(true);
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    if (mobileNavToggle) {
+      mobileNavToggle.classList.add('d-none');
+    }
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    if (mobileNavToggle) {
+      mobileNavToggle.classList.remove('d-none');
+    }
   };
 
   return (
