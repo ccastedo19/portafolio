@@ -10,7 +10,18 @@ import Inicio from './pages/inicio/inicio';
 import Portfolio from './pages/portfolio/portfolio';
 import SobreMi from './pages/sobre_mi/sobre_mi';
 import Contacto from './pages/contacto/contacto';
+import { Helmet } from 'react-helmet';
 
+
+function Pestania(){
+  return(
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Cesar Castedo</title>
+      <link rel="canonical" href="https://acortar.link/m4Ts36"/>
+    </Helmet>
+  )
+}
 
 function MainNavigation() {
   const [color, setColor] = useState('#a8a9b4'); 
@@ -56,6 +67,7 @@ function MainNavigation() {
 }
 
 function App() {
+  
   const [isMobileNavActive, setMobileNavActive] = useState(false);
   const headerRef = useRef(null);
 
@@ -83,7 +95,9 @@ function App() {
   }, [isMobileNavActive]); 
   
   return (
+      
       <div className={`App ${isMobileNavActive ? 'mobile-nav-active' : ''}`}>
+        <Pestania />
         <div className="mobile-nav-toggle d-xl-none" onClick={toggleMobileNav} style={{ zIndex: 10000 }}>
           <FontAwesomeIcon icon={isMobileNavActive ? faX: faBars} style={{ width: '15px' }} />
         </div>
