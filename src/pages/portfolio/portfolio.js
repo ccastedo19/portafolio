@@ -66,14 +66,14 @@ export const Portfolio = () => {
       
 
     },
-    {
+    { 
       img: img5,
       title: "SISTEMA BIBLIOTECARIO",
-      description: "Sistema Bibliotecario con gestionamiento de estudiantes.",
+      description: "Sistema Bibliotecario para el uso de reservas de libros.",
       repositorio:[{variant:"dark", icon: faGithub, url: "https://github.com/ccastedo19/sistema_bibliotecario", name: "Github" }],
       technologies: [{img: LogoLaravel}, {img: LogoHtml}, {img: LogoCss }, {img: LogoJS }, {img: LogoBoostrap2}, {img: LogoSql }],
-      videoUrl: "",
-      textNoValid: "Video no disponible",
+      videoUrl: "https://www.youtube.com/embed/gcTMy7OUCxo?si=c2bdPOZ0BAM6tBWZ",
+      // textNoValid: "Video no disponible",
       errorDisplay: "block"
       
     }
