@@ -994,4 +994,23 @@ section {
   }
 }
 
+@media(min-width: 768px) and (max-width: 991px){
+  .modal-dialog{
+    max-width: none;
+    width: 800px !important;
+  }
+}
 
+/*equidad con el menu modal porfolio*/
+
+@media(min-width: 1200px) and (max-width: 1320px){
+  .modal-dialog.modal-lg.modal-dialog-centered{
+    margin-left: 22rem;
+  }
+}
+
+@media(min-width: 1321px) and (max-width: 1600px){
+  .modal-dialog.modal-lg.modal-dialog-centered{
+    margin-left: 26rem;
+  }
+}
