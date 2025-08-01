@@ -34,7 +34,7 @@ export const Sobre_mi = () => {
               </div>
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>22</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>24</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Grado:</strong> <span>Licenciatura</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>cesar.castedo1@gmail.com</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Desarollador:</strong> <span>Web y Móvil</span></li>
